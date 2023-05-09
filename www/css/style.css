@@ -1,0 +1,101 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f1f1f1;
+    font-family: 'Montserrat', sans-serif;
+    color: #575B52;
+    font-size: 14px;
+}
+
+#video {
+    width: 90%;
+    max-width: 400px;
+    height: auto;
+    transform: scaleX(1);
+    background-color: #000;
+    display: none;
+}
+
+#result {
+    text-align: center;
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+button {
+    width: 60px;
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border: 5px solid #fff;
+    border-radius: 50%;
+    box-shadow: inset 0px 0px 5px #555, 0px 1px 2px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+    color: #fff;
+    transform: scale(0.9);
+}
+
+button:focus {
+    outline: none;
+}
+
+button:active {
+    transform: translateY(1px);
+}
+
+#inicio {
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.hide {
+  display: none;
+}
+
+a {
+    color: #555;
+    text-decoration: none;
+  }
+  
+  #gallery {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #fff;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    margin-top: 30px;
+  }
+  
+  #gallery label {
+    font-size: 25px;
+    margin-bottom: -5px;
+  }
+  
+  #gallery:hover {
+    background-color: #f2f2f2;
+  }
+  
+  #gallery input[type="file"] {
+    display: none;
+  }
