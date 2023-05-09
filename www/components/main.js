@@ -4,7 +4,7 @@ function scanQRCode() {
     console.error('API de mídia não suportada pelo navegador.');
     return;
   }
-
+const image = document.getElementById('image');
   const video = document.getElementById('video');
   const inicio = document.getElementById('inicio');
   const galleryInput = document.getElementById('galleryInput');
@@ -16,6 +16,7 @@ function scanQRCode() {
   navigator.mediaDevices.getUserMedia({ video: { facingMode: 'environment' } })
     .then(function (stream) {
       inicio.classList.add('hide');
+      image.classList.add('hide');
       video.style.display = 'block';
       galleryInput.style.display = 'none';
       video.srcObject = stream;
